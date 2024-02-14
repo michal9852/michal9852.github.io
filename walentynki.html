@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zostań moją walentynką</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            text-align: center;
+        }
+        h1 {
+            color: #d32f2f;
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #d32f2f;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #b71c1c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Czy zostaniesz moją walentynką?</h1>
+        
+        <button onclick="confirmChoice('Tak')">Tak</button>
+        <button onclick="confirmChoice('Nie')">Nie</button>
+    </div>
+
+    <script>
+        function confirmChoice(choice) {
+            if (choice === 'Tak') {
+                alert('To świetnie! Będzie super walentynkowy dzień!');
+            } else {
+                alert('Aha???');
+            }
+        }
+    </script>
+</body>
+</html>
